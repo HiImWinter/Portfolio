@@ -22,7 +22,9 @@
 
 <div class="jumbotron text-center">
   <h1>Hey, I'm Summer Johnson!</h1>
-  <p>But my friends just call me Winter</p> 
+  <p>But my friends just call me Winter</p>
+  <ul class="list-inline">
+    <li><a href="twitter.com/cicaptainwinter" data-toggle="tooltip" data-placement="top" title="You like me!">visit me on twitter</a></li>
 </div>
   
 <div class="container">
@@ -51,6 +53,12 @@
   <img src="helloworld.png" alt="Hello">
  <h6> Right now I'm a TA for Girls Who Code and this week we're learning about web development and the internet, so I'm doing it with them!</p>
 </div>
+  
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 
 </body>
 </html>
