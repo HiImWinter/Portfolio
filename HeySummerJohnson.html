@@ -9,10 +9,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
     
-    body, html, #hero-image {
-    height: 100%;
-    margin: 0;
-  }
+    
     .jumbotron {
     background-color:pink !important; 
     }
@@ -21,6 +18,12 @@
       color:#000;
       background-color:#95dee3
       }
+    
+    .bg-3
+    {
+      background-color: pink
+      
+    }
     
     img.resize {
     max-width:30%;
@@ -52,26 +55,6 @@
     -ms-transform: translate(-50%,-50%);
     }
     
-    #hero-image 
-    {
-    height: 100%;
-    background: url("helloworld.png") no-repeat center center;
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover;
-    background-size: cover;
-    }
-
-    #hero-text 
-    {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    }
-
   </style>
 </head>
 <body>
@@ -117,15 +100,8 @@
    <p>So anyways, I got flown out to Houston and my hotel was near this comic book shop. </p>
    <p> I'm going through the books and I see 'Hello World' and you know the rest </p>
   </div>
-  
- <div class="hero-image">
-    <div class="hero-text">
-    <h1 style="font-size:50px">This is my first time using bootstrap</h1>
-      <p> so forgive me if this is awful </p>
-    </div>
- </div>
 
-  <div class="container">
+  <div class="container-fluid bg-3">
   <h3 class="text-center">Contact</h3>
   <p class="text-center"><em>We love our fans!</em></p>
   <div class="row test">
