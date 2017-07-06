@@ -46,6 +46,40 @@
     transform: translate(-50%,-50%);
     -ms-transform: translate(-50%,-50%);
     }
+    
+    .hero-image {
+  background-image: url("helloworld.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
   </style>
 </head>
 <body>
@@ -85,10 +119,12 @@
   </div>
 </div>
   
-<div class="container-fluid bg-2 text-center">
-  <h3>I'm new to Bootstrap</h3>
-  <img class= "resize" src="helloworld.png" alt="Hello">
- <h6> Right now I'm a TA for Girls Who Code and this week we're learning about web development and the internet, so I'm doing it with them!</p>
+  <div class="hero-image bg-2 text-center">
+  <div class="hero-text">
+    <h1>I'm new to bootstrap</h1>
+    <p>Right now I'm a TA for Girls who Code and this week we're learning about web dev</p>
+    <button>Hire me</button>
+  </div>
 </div>
   
 
