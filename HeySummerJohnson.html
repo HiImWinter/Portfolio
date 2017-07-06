@@ -22,7 +22,7 @@
     max-height:30%;
   }
     
-   .overlay {
+   #overlay {
      position: fixed;
     display: none;
     width: 100%;
@@ -36,7 +36,7 @@
     cursor: pointer;
     }
     
-    .text 
+    #text 
     {
     position: absolute;
     top: 50%;
@@ -55,7 +55,14 @@
   <p>But my friends just call me Winter</p>
   <ul class="list-inline">
     <li><a href="twitter.com/cicaptainwinter" data-toggle="tooltip" data-placement="top" title="You like me!">visit me on twitter</a></li>
-  <button onclick="on()">Turn off the lights</button>
+  <div id="overlay" onclick="off()">
+  <div id="text">Overlay Text</div>
+</div>
+
+<div style="padding:20px">
+  <h2>Overlay with Text</h2>
+  <button onclick="on()">Turn on overlay effect</button>
+</div>
 </div>
   
 <div class="container">
@@ -85,9 +92,6 @@
  <h6> Right now I'm a TA for Girls Who Code and this week we're learning about web development and the internet, so I'm doing it with them!</p>
 </div>
   
-  <div id="overlay" onclick="off()">
-  <div id="text">Great you hate me</div>
-</div>
 
 
 <script>
